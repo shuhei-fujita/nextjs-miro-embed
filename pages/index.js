@@ -1,8 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { useEffect } from 'react';
 
 export default function Home() {
+
+  useEffect(() => {
+    const elements = document.getElementsByClassName('rtb-open-in-app-banner__box')
+    const iframDom = elements.contentWindow.document
+
+    for (var i = 0; i < iframDom.length; i++) {
+      iframDom[i].style.display ='none';
+    }
+  }, [])
+
   return (
     <div className={styles.container}>
       <Head>
@@ -17,10 +28,10 @@ export default function Home() {
         </h1>
 
         <div className={styles.embed}>
-          <iframe width="100%" height="432" src="https://miro.com/app/live-embed/o9J_l0yiJfI=/?moveToViewport=-3906,-3996,8198,8677&embedAutoplay=true" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+          <iframe width="100%" height="432" src="https://miro.com/app/live-embed/o9J_l0yiJfI=/?moveToViewport=-3906,-3996,8198,8677&embedAutoplay=true#toolbar=0" frameBorder="0" scrolling="no" allowFullScreen></iframe>
         </div>
         <div className={styles.embed}>
-          <iframe width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F7BKQs58UEW9vH18R0EW7Vf%2F%25E2%259D%2596-Base-Gallery-Community%3Fnode-id%3D3%253A4200" allowFullScreen></iframe>
+          <iframe width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F7BKQs58UEW9vH18R0EW7Vf%2F%25E2%259D%2596-Base-Gallery-Community%3Fnode-id%3D3%253A4200#toolbar=0&navpanes=0" allowFullScreen></iframe>
         </div>
       </main>
 

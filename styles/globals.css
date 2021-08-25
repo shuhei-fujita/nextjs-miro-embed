@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.rtb-open-in-app-banner__box {
+  display: none;
+}
