@@ -16,7 +16,7 @@ export default function Home() {
           miro embed
         </h1>
 
-        <div className={styles.grid}>
+        <div className={styles.embed}>
           <iframe width="100%" height="432" src="https://miro.com/app/live-embed/o9J_l0yiJfI=/?moveToViewport=-3906,-3996,8198,8677&embedAutoplay=true" frameBorder="0" scrolling="no" allowFullScreen></iframe>
         </div>
         <div className={styles.embed}>
