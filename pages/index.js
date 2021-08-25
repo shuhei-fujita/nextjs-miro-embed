@@ -4,15 +4,30 @@ import styles from '../styles/Home.module.css'
 import { useEffect } from 'react';
 
 export default function Home() {
+  console.log("log1");
 
   useEffect(() => {
-    const elements = document.getElementsByClassName('rtb-open-in-app-banner__box')
-    const iframDom = elements.contentWindow.document
+    var iframe = document.getElementById("myFrame");
+    var iframe2 = document.getElementById("myFrame2");
 
-    for (var i = 0; i < iframDom.length; i++) {
-      iframDom[i].style.display ='none';
+    const elements = iframe.contentWindow.document.getElementsByClassName('Home_title__3DjR7');
+    const elements2 = iframe2.contentWindow.document.getElementsByClassName('svg-container');
+
+    console.log(elements);
+
+    for (var i = 0; i < elements.length; i++) {
+      console.log("log2"+elements);
+      console.log("log3");
+
+      elements[i].style.display ='none';
+      // elements[i].style.display ='block';
     }
-  }, [])
+    
+    for (var i = 0; i < elements2.length; i++) {
+      elements2[i].style.display ='none';
+    }
+
+  })
 
   return (
     <div className={styles.container}>
@@ -28,10 +43,10 @@ export default function Home() {
         </h1>
 
         <div className={styles.embed}>
-          <iframe width="100%" height="432" src="https://miro.com/app/live-embed/o9J_l0yiJfI=/?moveToViewport=-3906,-3996,8198,8677&embedAutoplay=true#toolbar=0" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+          <iframe id="myFrame" width="100%" height="432" src="https://miro.com/app/live-embed/o9J_l0yiJfI=/?moveToViewport=-3906,-3996,8198,8677&embedAutoplay=true#toolbar=0" frameBorder="0" scrolling="no" allowFullScreen></iframe>
         </div>
         <div className={styles.embed}>
-          <iframe width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F7BKQs58UEW9vH18R0EW7Vf%2F%25E2%259D%2596-Base-Gallery-Community%3Fnode-id%3D3%253A4200#toolbar=0&navpanes=0" allowFullScreen></iframe>
+          <iframe id="myFrame2" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F7BKQs58UEW9vH18R0EW7Vf%2F%25E2%259D%2596-Base-Gallery-Community%3Fnode-id%3D3%253A4200#toolbar=0&navpanes=0" allowFullScreen></iframe>
         </div>
       </main>
 
