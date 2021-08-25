@@ -17,10 +17,10 @@ export default function Home() {
         </h1>
 
         <div className={styles.grid}>
-          <iframe width="768" height="432" src="https://miro.com/app/live-embed/o9J_l0yiJfI=/?moveToViewport=-3906,-3996,8198,8677" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+          <iframe width="768" height="432" src="https://miro.com/app/live-embed/o9J_l0yiJfI=/?moveToViewport=-3906,-3996,8198,8677" frameBorder="0" scrolling="no" ></iframe>
         </div>
         <div className={styles.grid}>
-          <iframe width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F7BKQs58UEW9vH18R0EW7Vf%2F%25E2%259D%2596-Base-Gallery-Community%3Fnode-id%3D3%253A4200" allowfullscreen></iframe>
+          <iframe width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F7BKQs58UEW9vH18R0EW7Vf%2F%25E2%259D%2596-Base-Gallery-Community%3Fnode-id%3D3%253A4200" ></iframe>
         </div>
       </main>
 
