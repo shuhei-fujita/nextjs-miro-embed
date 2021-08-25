@@ -119,3 +119,7 @@
     flex-direction: column;
   }
 }
+
+.embed {
+  padding: 60px 0px;
+}
