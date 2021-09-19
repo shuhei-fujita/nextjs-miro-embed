@@ -68,10 +68,17 @@ a {
   z-index: 20;
 }
 
-.absolute_miro_left {
+.miro {
   position:  relative;       
   background-color: #ccc;
   width: 100%;
   left: -68px;
   z-index: 10;
+}
+
+.miro_main {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

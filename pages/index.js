@@ -20,17 +20,17 @@ export default function Home() {
           miro embed
         </h1>
         
-        <div className="bar_top" />
-
-        <Flex color="white">
-          <div className="bar_left" />
-          <div className="absolute_miro_left">
-            <Miro />
-          </div>
-          <div className="bar_right" />
-        </Flex>
-
-        <div className="bar_bottom" />
+        <div className="miro_main">
+          <div className="bar_top" />
+          <Flex color="white">
+            <div className="bar_left" />
+            <div className="miro">
+              <Miro />
+            </div>
+            <div className="bar_right" />
+          </Flex>
+          <div className="bar_bottom" />
+        </div>
 
 {/* 
         <div className={styles.embed}>
