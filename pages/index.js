@@ -1,6 +1,9 @@
+import React from "react";
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Miro from '../components/miro'
+import { Flex } from "@chakra-ui/react"
 
 export default function Home() {
   return (
@@ -12,16 +15,27 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        {/* className={styles.title} */}
+        <h1 id="main-title" className="main-title-class">
           miro embed
         </h1>
+        
+        <div className="miro_main">
+          <div className="bar_top" />
+          <Flex color="white">
+            <div className="bar_left" />
+            <div className="miro">
+              <Miro />
+            </div>
+            <div className="bar_right" />
+          </Flex>
+          <div className="bar_bottom" />
+        </div>
 
+{/* 
         <div className={styles.embed}>
-          <iframe width="100%" height="432" src="https://miro.com/app/live-embed/o9J_l0yiJfI=/?moveToViewport=-3906,-3996,8198,8677&embedAutoplay=true" frameBorder="0" scrolling="no" allowFullScreen></iframe>
-        </div>
-        <div className={styles.embed}>
-          <iframe width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F7BKQs58UEW9vH18R0EW7Vf%2F%25E2%259D%2596-Base-Gallery-Community%3Fnode-id%3D3%253A4200" allowFullScreen></iframe>
-        </div>
+          <iframe className="css-5bxaph" width="768" height="432" src="https://miro.com/app/live-embed/o9J_l0yiJfI=/?moveToViewport=-3906,-3996,8198,8677&embedAutoplay=true#toolbar=0" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+        </div> */}
       </main>
 
       <footer className={styles.footer}>

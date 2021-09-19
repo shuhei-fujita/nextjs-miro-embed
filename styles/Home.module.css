@@ -123,3 +123,7 @@
 .embed {
   padding: 60px;
 }
+
+.rtb-open-in-app-banner__box {
+  display: none;
+}

@@ -14,3 +14,71 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.rtb-open-in-app-banner__box {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .css-5bxaph {
+    --margin-top: 64px;
+  }
+}
+
+.css-5bxaph {
+  --margin-top: 100px;
+  --margin-left: 70px;
+  --margin-bottom: 219px;
+  width: 100%;
+  height: 100%;
+  width: calc(100% + var(--margin-left));
+  margin-left: calc(var(--margin-left) * -1);
+  height: calc(100% + var(--margin-top) + var(--margin-bottom));
+  margin-top: calc(var(--margin-top) * -1);
+  margin-bottom: calc(var(--margin-bottom) * -1);
+}
+
+.bar_top {
+  position:  relative;
+  background-color: #ccc;
+  height:  80px;
+  bottom: -60px;
+  z-index: 20;
+}
+
+.bar_bottom {
+  position:  relative;
+  background-color: #ccc;
+  height:  80px;
+  top: -60px;
+  z-index: 20;
+}
+
+.bar_left {
+  position:  relative;       
+  background-color: #ccc;
+  width:  80px;
+  z-index: 20;
+}
+
+.bar_right {
+  position:  relative;       
+  background-color: #ccc;
+  width:  80px;
+  z-index: 20;
+}
+
+.miro {
+  position:  relative;       
+  background-color: #ccc;
+  width: 100%;
+  left: -68px;
+  z-index: 10;
+}
+
+.miro_main {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
